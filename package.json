@@ -1,0 +1,60 @@
+{
+  "name": "redux-interpretation",
+  "version": "1.0.0",
+  "description": "Typesript redux",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack",
+    "test": "jest"
+  },
+  "jest": {
+    "transform": {
+      ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "testResultsProcessor": "<rootDir>/node_modules/ts-jest/coverageprocessor.js",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "modulePathIgnorePatterns": [
+      "/^((?!src).)/"
+    ],
+    "coveragePathIgnorePatterns": [
+      "/node_modules/",
+      "/__tests__/"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YingQQQ/redux-interpretation.git"
+  },
+  "keywords": [
+    "Typescript",
+    "rewrite",
+    "redux"
+  ],
+  "author": "Y",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YingQQQ/redux-interpretation/issues"
+  },
+  "homepage": "https://github.com/YingQQQ/redux-interpretation#readme",
+  "devDependencies": {
+    "@types/jest": "^19.2.2",
+    "awesome-typescript-loader": "^3.1.2",
+    "jest": "^19.0.2",
+    "source-map-loader": "^0.2.0",
+    "ts-jest": "^19.0.4",
+    "tslint": "^4.5.1",
+    "tslint-config-standard": "^4.0.0",
+    "tslint-loader": "^3.4.3",
+    "typescript": "^2.2.1",
+    "webpack": "^2.3.2"
+  },
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "symbol-observable": "^1.0.4"
+  }
+}
