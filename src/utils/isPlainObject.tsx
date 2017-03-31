@@ -26,6 +26,7 @@ const getValueTag = (value): string => {
   try {
     value[symToString] = undefined;
     canMasked = true;
+  /* tslint:disable-next-line: no-empty */
   } catch (e) {};
 
   const result: string = toString.call(value);
