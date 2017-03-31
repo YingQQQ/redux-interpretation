@@ -1,5 +1,14 @@
-function greeter (person: string) {
-  return 'Hello, ' + person;
-}
+import createStore from './createStore';
+import combineReducers from './combineReducers';
+import bindActionCreators from './bindActionCreators';
+import applyMiddleware from './applyMiddleware';
+import compose from './compose';
+import warning from './utils/warning';
 
-export default greeter;
+export {
+  createStore,
+  combineReducers,
+  bindActionCreators,
+  applyMiddleware,
+  compose
+};

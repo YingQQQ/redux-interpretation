@@ -130,7 +130,8 @@ describe('TypeRedux easy test', () => {
   });
 
   it('bindActionCreators test', () => {
-    global.console = { error: jest.fn() };
+    const _console = console;
+    global.console = { error : jest.fn() };
     const store = createStore(todos);
     const boundActionCreators = bindActionCreators({
       newTodo,
@@ -147,5 +148,6 @@ describe('TypeRedux easy test', () => {
       Object.keys(actionCreatorFunctions)
     );
     expect(console.error.mock.calls.length).toBe(5);
+    global.console = _console;
   });
 });

@@ -2,8 +2,5 @@
   "extends": "tslint-config-standard",
   "rules": {
     "semicolon": [true, "always"]
-  },
-  "globals": {
-    "process": true
   }
 }
