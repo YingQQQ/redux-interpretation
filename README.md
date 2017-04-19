@@ -1,4 +1,5 @@
 # redux-interpretation
+
 重写redux,对redux源码进行中文标注;
 
 使用typescript对Redux进行重写。
